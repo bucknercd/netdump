@@ -177,6 +177,10 @@ void process_packet(void * packet, int size){
 }
 
 int main(int argc, char **argv) {
+    if (argc < 2) {
+        fprintf(stderr, "Usage: prtlog <logfile>\ni.e.  $ prtlog logs/*\n");
+        exit(1);
+    }
     Pcap_file_header *pcap_header;
     My_pkthdr *packet_header;
     int cval;

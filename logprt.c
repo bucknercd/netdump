@@ -75,6 +75,10 @@ int openfile(char *file, char type) {   // r, w, a
 }
 
 int main(int argc, char **argv) {
+    if (argc <  2) {
+        fprintf(stderr, "Usage:  $ logprt <logfile>\ni.e. logprt logs/*\n");
+        exit(1);
+    }
     Pcap_file_header *pcap_header;
     My_pkthdr *packet_header;
     int cval;
