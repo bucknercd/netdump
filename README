@@ -1,7 +1,8 @@
 This a netdump analyzer tool I wrote in C.  
 
-In order to run, just run the makefile  ('make')
+In order to run, just run the makefile
+$ make
 
 Then when you want to run:
 
-   $  prtlog <logs/*.log>
+   $  ./prtlog <logs/*>
