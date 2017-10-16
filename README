@@ -1,8 +1,11 @@
-This a netdump analyzer tool I wrote in C.  
+This a netdump analyzer tool I wrote in C.
+It reads pcap files. It will not read pcapng files though.
 
 In order to run, just run the makefile
 $ make
 
 Then when you want to run:
 
-   $  ./prtlog <logs/*>
+   $  ./prtlog <pcapfile>
+   
+   *Note: There are some pcap files in the logs directory
